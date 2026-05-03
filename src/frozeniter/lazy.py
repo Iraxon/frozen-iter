@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from functools import cache
 
 @dataclass
-class LazyI[T]:
+class Lazy[T]:
     supplier: Callable[[], T]
 
     @cache
